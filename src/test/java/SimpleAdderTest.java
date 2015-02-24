@@ -1,5 +1,4 @@
 import junit.framework.TestCase;
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -16,8 +15,17 @@ public class SimpleAdderTest extends TestCase {
     }
 
     @Test
-    public void testAdder() throws Exception {
+    public void testAddPair() throws Exception {
+        assertEquals("2", a.add("1,1"));
+    }
 
-        Assert.assertEquals("2", a.add("1,1"));
+    @Test
+    public void testAddSingle() throws Exception {
+        assertEquals("5", a.add("5"));
+    }
+
+    @Test
+    public void testAddMultiple() throws Exception {
+        assertEquals("6", a.add("1,2,3"));
     }
 }
