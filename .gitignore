@@ -1,0 +1,4 @@
+# ignore generated inteliJ files,
+.idea*
+# igonre target
+target
