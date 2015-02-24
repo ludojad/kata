@@ -1,4 +1,4 @@
 # ignore generated inteliJ files,
-.idea*
+/.idea/
 # igonre target
-target
+/target
